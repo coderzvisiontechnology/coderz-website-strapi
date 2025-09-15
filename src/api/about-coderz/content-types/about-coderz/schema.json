@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_coderzs",
+  "info": {
+    "singularName": "about-coderz",
+    "pluralName": "about-coderzs",
+    "displayName": "About Coderz"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

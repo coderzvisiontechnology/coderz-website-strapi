@@ -1,0 +1,14 @@
+{
+  "kind": "singleType",
+  "collectionName": "awards_and_recognitions",
+  "info": {
+    "singularName": "awards-and-recognition",
+    "pluralName": "awards-and-recognitions",
+    "displayName": "Awards and Recognition"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}

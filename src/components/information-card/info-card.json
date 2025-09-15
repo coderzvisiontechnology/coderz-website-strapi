@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_information_card_info_cards",
+  "info": {
+    "displayName": "infoCard"
+  },
+  "options": {},
+  "attributes": {
+    "client_name": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "service_category": {
+      "type": "string"
+    },
+    "technology_used": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
