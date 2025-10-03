@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_information_card_footer_menus",
+  "info": {
+    "displayName": "footer_menu"
+  },
+  "options": {},
+  "attributes": {
+    "footer_menu": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer_ctas",
+  "info": {
+    "singularName": "footer-cta",
+    "pluralName": "footer-ctas",
+    "displayName": "Footer CTA"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cta_title": {
+      "type": "string"
+    },
+    "cta_description": {
+      "type": "text"
+    },
+    "cta_button": {
+      "type": "blocks"
+    },
+    "site_logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  }
+}
