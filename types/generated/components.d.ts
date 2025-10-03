@@ -6,6 +6,7 @@ export interface InformationCardAddress extends Struct.ComponentSchema {
     displayName: 'Address';
   };
   attributes: {
+    address_icon: Schema.Attribute.Media<'images' | 'files'>;
     country_name: Schema.Attribute.String;
     locatiom: Schema.Attribute.Text;
   };
@@ -77,7 +78,14 @@ export interface InformationCardServiceLisis extends Struct.ComponentSchema {
   info: {
     displayName: 'Service_Lists';
   };
-  attributes: {};
+  attributes: {
+    service_description: Schema.Attribute.Text;
+    service_icon: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    service_image: Schema.Attribute.Media<'images' | 'files'>;
+    service_title: Schema.Attribute.String;
+  };
 }
 
 export interface InformationCardSocialLinks extends Struct.ComponentSchema {

@@ -605,10 +605,26 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
       Schema.Attribute.Private;
+    partner_images: Schema.Attribute.Component<
+      'information-card.partner-images',
+      true
+    >;
+    partner_section_title: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    section_buttontext: Schema.Attribute.Blocks;
+    section_subtitle: Schema.Attribute.Text;
+    section_title: Schema.Attribute.String;
+    service_list: Schema.Attribute.Component<
+      'information-card.service-lisis',
+      true
+    >;
+    service_section_description: Schema.Attribute.Text;
+    service_section_subtitle: Schema.Attribute.String;
+    service_section_title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

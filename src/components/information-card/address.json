@@ -10,6 +10,14 @@
     },
     "locatiom": {
       "type": "text"
+    },
+    "address_icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
     }
   },
   "config": {}

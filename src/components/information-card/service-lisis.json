@@ -4,6 +4,31 @@
     "displayName": "Service_Lists"
   },
   "options": {},
-  "attributes": {},
+  "attributes": {
+    "service_title": {
+      "type": "string"
+    },
+    "service_description": {
+      "type": "text"
+    },
+    "service_icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "service_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  },
   "config": {}
 }
