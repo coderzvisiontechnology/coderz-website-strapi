@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_information_card_policies",
+  "info": {
+    "displayName": "Policies"
+  },
+  "options": {},
+  "attributes": {
+    "policies": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

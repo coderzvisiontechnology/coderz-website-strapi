@@ -484,6 +484,113 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiFooterCtaFooterCta extends Struct.SingleTypeSchema {
+  collectionName: 'footer_ctas';
+  info: {
+    displayName: 'Footer CTA';
+    pluralName: 'footer-ctas';
+    singularName: 'footer-cta';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cta_button: Schema.Attribute.Blocks;
+    cta_description: Schema.Attribute.Text;
+    cta_title: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::footer-cta.footer-cta'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    site_logo: Schema.Attribute.Media<'images' | 'files'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiFooterFooter extends Struct.SingleTypeSchema {
+  collectionName: 'footers';
+  info: {
+    displayName: 'Footer';
+    pluralName: 'footers';
+    singularName: 'footer';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    address: Schema.Attribute.Component<'information-card.address', true>;
+    copyright: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Blocks;
+    email_icon: Schema.Attribute.Media<'images' | 'files'>;
+    Footer_Menu: Schema.Attribute.Component<
+      'information-card.footer-menu',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::footer.footer'
+    > &
+      Schema.Attribute.Private;
+    our_partners: Schema.Attribute.Media<'images' | 'files'>;
+    phone_icon: Schema.Attribute.Media<'images' | 'files'>;
+    phone_no: Schema.Attribute.Blocks;
+    Policies: Schema.Attribute.Component<'information-card.policies', true>;
+    publishedAt: Schema.Attribute.DateTime;
+    social_links: Schema.Attribute.Component<
+      'information-card.social-links',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHeaderHeader extends Struct.SingleTypeSchema {
+  collectionName: 'headers';
+  info: {
+    displayName: 'Header';
+    pluralName: 'headers';
+    singularName: 'header';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    header_button: Schema.Attribute.Blocks;
+    header_menu: Schema.Attribute.Component<
+      'information-card.header-menu',
+      true
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::header.header'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    site_logo: Schema.Attribute.Media<'images' | 'files'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiHomeHome extends Struct.SingleTypeSchema {
   collectionName: 'homes';
   info: {
@@ -498,10 +605,26 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images' | 'files'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
       Schema.Attribute.Private;
+    partner_images: Schema.Attribute.Component<
+      'information-card.partner-images',
+      true
+    >;
+    partner_section_title: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    section_buttontext: Schema.Attribute.Blocks;
+    section_subtitle: Schema.Attribute.Text;
+    section_title: Schema.Attribute.String;
+    service_list: Schema.Attribute.Component<
+      'information-card.service-lisis',
+      true
+    >;
+    service_section_description: Schema.Attribute.Text;
+    service_section_subtitle: Schema.Attribute.String;
+    service_section_title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1197,6 +1320,9 @@ declare module '@strapi/strapi' {
       'api::awards-and-recognition.awards-and-recognition': ApiAwardsAndRecognitionAwardsAndRecognition;
       'api::coderz-portfolio.coderz-portfolio': ApiCoderzPortfolioCoderzPortfolio;
       'api::contact.contact': ApiContactContact;
+      'api::footer-cta.footer-cta': ApiFooterCtaFooterCta;
+      'api::footer.footer': ApiFooterFooter;
+      'api::header.header': ApiHeaderHeader;
       'api::home.home': ApiHomeHome;
       'api::portfolio.portfolio': ApiPortfolioPortfolio;
       'api::post.post': ApiPostPost;
