@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_information_card_about_uses",
+  "info": {
+    "displayName": "about_us"
+  },
+  "options": {},
+  "attributes": {
+    "about_icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "about_title": {
+      "type": "string"
+    },
+    "about_description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

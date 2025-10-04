@@ -49,6 +49,109 @@
       "type": "component",
       "component": "information-card.service-lisis",
       "repeatable": true
+    },
+    "about_section__title": {
+      "type": "string"
+    },
+    "about_section_subtitle": {
+      "type": "string"
+    },
+    "about_section_description": {
+      "type": "text"
+    },
+    "about_us": {
+      "type": "component",
+      "component": "information-card.about-us",
+      "repeatable": true
+    },
+    "about_button_text": {
+      "type": "blocks"
+    },
+    "about_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "benefits_section": {
+      "type": "string"
+    },
+    "benefits_section_title": {
+      "type": "string"
+    },
+    "benefits_section_description": {
+      "type": "text"
+    },
+    "benefits_section_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "benefits_card": {
+      "type": "component",
+      "component": "information-card.benefits-card-section",
+      "repeatable": true
+    },
+    "testimonial_title": {
+      "type": "string"
+    },
+    "testimonial_subtitle": {
+      "type": "string"
+    },
+    "testimonial_section": {
+      "type": "component",
+      "component": "information-card.testimonial-section",
+      "repeatable": true
+    },
+    "trusted_title": {
+      "type": "string"
+    },
+    "trusted_subtitle": {
+      "type": "string"
+    },
+    "trusted_images": {
+      "type": "component",
+      "component": "information-card.trusted-images",
+      "repeatable": true
+    },
+    "consultation_title": {
+      "type": "string"
+    },
+    "consultation_subtitle": {
+      "type": "string"
+    },
+    "consultation_button": {
+      "type": "blocks"
+    },
+    "consultation_image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "faq_section": {
+      "type": "string"
+    },
+    "faq_section_title": {
+      "type": "string"
+    },
+    "faq": {
+      "type": "component",
+      "component": "information-card.faq",
+      "repeatable": true
+    },
+    "contact_us_title": {
+      "type": "string"
+    },
+    "contac_us_subtitle": {
+      "type": "text"
     }
   }
 }
