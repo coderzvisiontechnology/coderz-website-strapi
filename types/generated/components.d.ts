@@ -63,7 +63,21 @@ export interface InformationCardHeaderMenu extends Struct.ComponentSchema {
     displayName: 'header_menu';
   };
   attributes: {
+    header_submenu: Schema.Attribute.Component<
+      'information-card.header-submenu',
+      true
+    >;
     menu: Schema.Attribute.Blocks;
+  };
+}
+
+export interface InformationCardHeaderSubmenu extends Struct.ComponentSchema {
+  collectionName: 'components_information_card_header_submenus';
+  info: {
+    displayName: 'header_submenu';
+  };
+  attributes: {
+    submenu: Schema.Attribute.Blocks;
   };
 }
 
@@ -188,6 +202,7 @@ declare module '@strapi/strapi' {
       'information-card.faq': InformationCardFaq;
       'information-card.footer-menu': InformationCardFooterMenu;
       'information-card.header-menu': InformationCardHeaderMenu;
+      'information-card.header-submenu': InformationCardHeaderSubmenu;
       'information-card.info-card': InformationCardInfoCard;
       'information-card.partner-images': InformationCardPartnerImages;
       'information-card.policies': InformationCardPolicies;
