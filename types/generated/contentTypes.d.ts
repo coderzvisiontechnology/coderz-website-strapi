@@ -569,10 +569,10 @@ export interface ApiHeaderHeader extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    Button: Schema.Attribute.Component<'buttoncomponent.button', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    header_button: Schema.Attribute.Blocks;
     header_menu: Schema.Attribute.Component<
       'information-card.header-menu',
       true

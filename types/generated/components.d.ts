@@ -1,5 +1,16 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface ButtoncomponentButton extends Struct.ComponentSchema {
+  collectionName: 'components_buttoncomponent_buttons';
+  info: {
+    displayName: 'Button';
+  };
+  attributes: {
+    button_label: Schema.Attribute.String;
+    button_link: Schema.Attribute.String;
+  };
+}
+
 export interface InformationCardAboutUs extends Struct.ComponentSchema {
   collectionName: 'components_information_card_about_uses';
   info: {
@@ -196,6 +207,7 @@ export interface SeoSeo extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'buttoncomponent.button': ButtoncomponentButton;
       'information-card.about-us': InformationCardAboutUs;
       'information-card.address': InformationCardAddress;
       'information-card.benefits-card-section': InformationCardBenefitsCardSection;

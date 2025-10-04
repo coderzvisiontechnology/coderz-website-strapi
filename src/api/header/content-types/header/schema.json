@@ -24,8 +24,10 @@
       "component": "information-card.header-menu",
       "repeatable": true
     },
-    "header_button": {
-      "type": "blocks"
+    "Button": {
+      "type": "component",
+      "component": "buttoncomponent.button",
+      "repeatable": false
     }
   }
 }
