@@ -7,6 +7,11 @@
   "attributes": {
     "menu": {
       "type": "blocks"
+    },
+    "header_submenu": {
+      "type": "component",
+      "component": "information-card.header-submenu",
+      "repeatable": true
     }
   },
   "config": {}

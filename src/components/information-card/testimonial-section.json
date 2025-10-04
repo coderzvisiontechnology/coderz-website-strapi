@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_information_card_testimonial_sections",
+  "info": {
+    "displayName": "testimonial section"
+  },
+  "options": {},
+  "attributes": {
+    "testimonial_name": {
+      "type": "string"
+    },
+    "testimonial_companyname": {
+      "type": "string"
+    },
+    "testimonial_icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "testimonial_quote": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

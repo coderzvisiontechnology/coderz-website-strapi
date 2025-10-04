@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_information_card_faqs",
+  "info": {
+    "displayName": "faq"
+  },
+  "options": {},
+  "attributes": {
+    "faq_title": {
+      "type": "string"
+    },
+    "faq_subtitle": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

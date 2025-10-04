@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_information_card_header_submenus",
+  "info": {
+    "displayName": "header_submenu"
+  },
+  "options": {},
+  "attributes": {
+    "submenu": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}
