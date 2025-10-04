@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_information_card_trusted_images",
+  "info": {
+    "displayName": "trusted_images"
+  },
+  "options": {},
+  "attributes": {
+    "trusted_logos": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}

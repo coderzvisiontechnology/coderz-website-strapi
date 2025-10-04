@@ -602,9 +602,32 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    about_button_text: Schema.Attribute.Blocks;
+    about_image: Schema.Attribute.Media<'images' | 'files'>;
+    about_section__title: Schema.Attribute.String;
+    about_section_description: Schema.Attribute.Text;
+    about_section_subtitle: Schema.Attribute.String;
+    about_us: Schema.Attribute.Component<'information-card.about-us', true>;
+    benefits_card: Schema.Attribute.Component<
+      'information-card.benefits-card-section',
+      true
+    >;
+    benefits_section: Schema.Attribute.String;
+    benefits_section_description: Schema.Attribute.Text;
+    benefits_section_image: Schema.Attribute.Media<'images' | 'files'>;
+    benefits_section_title: Schema.Attribute.String;
+    consultation_button: Schema.Attribute.Blocks;
+    consultation_image: Schema.Attribute.Media<'images' | 'files'>;
+    consultation_subtitle: Schema.Attribute.String;
+    consultation_title: Schema.Attribute.String;
+    contac_us_subtitle: Schema.Attribute.Text;
+    contact_us_title: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    faq: Schema.Attribute.Component<'information-card.faq', true>;
+    faq_section: Schema.Attribute.String;
+    faq_section_title: Schema.Attribute.String;
     image: Schema.Attribute.Media<'images' | 'files'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::home.home'> &
@@ -625,6 +648,18 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
     service_section_description: Schema.Attribute.Text;
     service_section_subtitle: Schema.Attribute.String;
     service_section_title: Schema.Attribute.String;
+    testimonial_section: Schema.Attribute.Component<
+      'information-card.testimonial-section',
+      true
+    >;
+    testimonial_subtitle: Schema.Attribute.String;
+    testimonial_title: Schema.Attribute.String;
+    trusted_images: Schema.Attribute.Component<
+      'information-card.trusted-images',
+      true
+    >;
+    trusted_subtitle: Schema.Attribute.String;
+    trusted_title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
